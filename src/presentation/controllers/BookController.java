@@ -2,32 +2,20 @@ package presentation.controllers;
 
 import entities.items.Book;
 
-import java.util.List;
-
 public class BookController extends Controller<Book> {
 
     @Override
-    public List<Book> getAll() {
-        return List.of();
-    }
+    public void getAll() {}
 
     @Override
-    public Book getById(int id) {
-        return null;
-    }
+    public void getById() {}
 
     @Override
-    public Book create(Book element) {
-        return null;
-    }
+    public void create() {}
 
     @Override
-    public Book update(Book element) {
-        return null;
-    }
+    public void update() {}
 
     @Override
-    public void delete(int id) {
-
-    }
+    public void delete() {}
 }

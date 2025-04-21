@@ -5,28 +5,29 @@ import entities.auth.Librarian;
 import java.util.List;
 
 public class LibrarianController extends Controller<Librarian> {
+
     @Override
-    public List<Librarian> getAll() {
-        return List.of();
+    public void getAll() {
+
     }
 
     @Override
-    public Librarian getById(int id) {
-        return null;
+    public void getById() {
+
     }
 
     @Override
-    public Librarian create(Librarian element) {
-        return null;
+    public void create() {
+
     }
 
     @Override
-    public Librarian update(Librarian element) {
-        return null;
+    public void update() {
+
     }
 
     @Override
-    public void delete(int id) {
+    public void delete() {
 
     }
 }

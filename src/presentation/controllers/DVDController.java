@@ -2,31 +2,20 @@ package presentation.controllers;
 
 import entities.items.DVD;
 
-import java.util.List;
-
 public class DVDController extends Controller<DVD> {
-    @Override
-    public List<DVD> getAll() {
-        return List.of();
-    }
 
     @Override
-    public DVD getById(int id) {
-        return null;
-    }
+    public void getAll() {}
 
     @Override
-    public DVD create(DVD element) {
-        return null;
-    }
+    public void getById() {}
 
     @Override
-    public DVD update(DVD element) {
-        return null;
-    }
+    public void create() {}
 
     @Override
-    public void delete(int id) {
+    public void update() {}
 
-    }
+    @Override
+    public void delete() {}
 }

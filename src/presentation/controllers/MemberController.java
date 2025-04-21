@@ -2,31 +2,20 @@ package presentation.controllers;
 
 import entities.auth.Member;
 
-import java.util.List;
-
 public class MemberController extends Controller<Member> {
-    @Override
-    public List<Member> getAll() {
-        return null;
-    }
 
     @Override
-    public Member getById(int id) {
-        return null;
-    }
+    public void getAll() {}
 
     @Override
-    public Member create(Member element) {
-        return null;
-    }
+    public void getById() {}
 
     @Override
-    public Member update(Member element) {
-        return null;
-    }
+    public void create() {}
 
     @Override
-    public void delete(int id) {
+    public void update() {}
 
-    }
+    @Override
+    public void delete() {}
 }
