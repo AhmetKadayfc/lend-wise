@@ -1,28 +1,27 @@
 package presentation.controllers;
 
-import entities.items.Book;
+import entities.items.Magazine;
 
 import java.util.List;
 
-public class BookController extends Controller<Book> {
-
+public class MagazineController extends Controller<Magazine> {
     @Override
-    public List<Book> getAll() {
+    public List<Magazine> getAll() {
         return List.of();
     }
 
     @Override
-    public Book getById(int id) {
+    public Magazine getById(int id) {
         return null;
     }
 
     @Override
-    public Book create(Book element) {
+    public Magazine create(Magazine element) {
         return null;
     }
 
     @Override
-    public Book update(Book element) {
+    public Magazine update(Magazine element) {
         return null;
     }
 
