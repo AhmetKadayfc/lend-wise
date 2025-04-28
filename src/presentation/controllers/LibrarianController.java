@@ -1,33 +1,28 @@
 package presentation.controllers;
 
+import business.LibrarianService;
 import entities.auth.Librarian;
 
-import java.util.List;
+import java.util.Scanner;
 
 public class LibrarianController extends Controller<Librarian> {
 
-    @Override
-    public void getAll() {
-
+    public LibrarianController(Scanner scanner) {
+        super(scanner, new LibrarianService());
     }
 
     @Override
-    public void getById() {
-
-    }
+    public void getAll() {}
 
     @Override
-    public void create() {
-
-    }
+    public void getById() {}
 
     @Override
-    public void update() {
-
-    }
+    public void create() {}
 
     @Override
-    public void delete() {
+    public void update() {}
 
-    }
+    @Override
+    public void delete() {}
 }

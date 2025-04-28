@@ -1,6 +1,5 @@
 package presentation;
 
-
 import presentation.controllers.*;
 
 import java.util.Scanner;
@@ -22,11 +21,11 @@ public class LibraryApp {
         scanner = new Scanner(System.in);
 
         memberController = new MemberController(scanner);
-        librarianController = new LibrarianController(); //TODO: Write this controller with scanner and related service
-        directorController = new DirectorController(); // TODO: Write this controller with scanner and related service
+        librarianController = new LibrarianController(scanner);
+        directorController = new DirectorController(scanner);
         bookController = new BookController(scanner);
-        magazineController = new MagazineController(); // TODO: Write this controller with scanner and related service
-        dvdController = new DVDController(); // TODO: Write this controller with scanner and related service
+        magazineController = new MagazineController(scanner);
+        dvdController = new DVDController(scanner);
     }
 
     public void run() {

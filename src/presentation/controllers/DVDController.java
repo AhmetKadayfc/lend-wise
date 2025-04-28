@@ -1,8 +1,15 @@
 package presentation.controllers;
 
+import business.DVDService;
 import entities.items.DVD;
 
+import java.util.Scanner;
+
 public class DVDController extends Controller<DVD> {
+
+    public DVDController(Scanner scanner) {
+        super(scanner, new DVDService());
+    }
 
     @Override
     public void getAll() {}
