@@ -1,8 +1,15 @@
 package presentation.controllers;
 
+import business.BookService;
 import entities.items.Book;
 
+import java.util.Scanner;
+
 public class BookController extends Controller<Book> {
+
+    public BookController(Scanner scanner) {
+        super(scanner, new BookService());
+    }
 
     @Override
     public void getAll() {}

@@ -5,7 +5,6 @@ import presentation.controllers.*;
 
 import java.util.Scanner;
 
-
 public class LibraryApp {
     private boolean isRunning = false;
     private final Scanner scanner;
@@ -22,12 +21,12 @@ public class LibraryApp {
     public LibraryApp() {
         scanner = new Scanner(System.in);
 
-        memberController = new MemberController();
-        librarianController = new LibrarianController();
-        directorController = new DirectorController();
-        bookController = new BookController();
-        magazineController = new MagazineController();
-        dvdController = new DVDController();
+        memberController = new MemberController(scanner);
+        librarianController = new LibrarianController(); //TODO: Write this controller with scanner and related service
+        directorController = new DirectorController(); // TODO: Write this controller with scanner and related service
+        bookController = new BookController(scanner);
+        magazineController = new MagazineController(); // TODO: Write this controller with scanner and related service
+        dvdController = new DVDController(); // TODO: Write this controller with scanner and related service
     }
 
     public void run() {
@@ -84,8 +83,7 @@ public class LibraryApp {
                 System.out.println("Please enter a number between 0 and " + maxOption);
                 return -1;
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Please enter a valid number");
+        } catch (NumberFormatException _) {
         }
         return choice;
     }
@@ -267,6 +265,7 @@ public class LibraryApp {
             switch (choice) {
                 case 1:
                     memberController.create();
+
                     break;
                 case 2:
                     memberController.getAll();
