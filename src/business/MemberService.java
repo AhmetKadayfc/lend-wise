@@ -1,10 +1,16 @@
 package business;
 
+import dal.MemberManager;
 import entities.auth.Member;
 
 import java.util.List;
 
 public class MemberService extends Service<Member> {
+
+    public MemberService() {
+        super(new MemberManager());
+    }
+
     @Override
     public Member getById(String id) {
         return null;

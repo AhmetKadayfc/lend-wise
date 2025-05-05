@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public abstract class Controller<T>{
     protected Scanner scanner;
-    protected Service<T> service;
+    protected final Service<T> service;
 
     public Controller(Scanner scanner, Service<T> service) {
         this.scanner = scanner;

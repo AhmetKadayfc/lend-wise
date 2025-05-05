@@ -1,9 +1,14 @@
 package business;
 
+import dal.BookManager;
 import entities.items.Book;
 import java.util.List;
 
 public class BookService extends Service<Book>{
+    public BookService() {
+        super(new BookManager());
+    }
+
     @Override
     public Book getById(String id) {
         return null;
