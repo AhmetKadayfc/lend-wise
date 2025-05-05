@@ -1,10 +1,16 @@
 package business;
 
+import dal.DirectorManager;
 import entities.auth.Director;
 
 import java.util.List;
 
 public class DirectorService extends Service<Director> {
+
+    public DirectorService() {
+        super(new DirectorManager());
+    }
+
     @Override
     public Director getById(String id) {
         return null;

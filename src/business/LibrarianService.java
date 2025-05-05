@@ -1,10 +1,16 @@
 package business;
 
+import dal.LibrarianManager;
 import entities.auth.Librarian;
 
 import java.util.List;
 
 public class LibrarianService extends Service<Librarian> {
+
+    public LibrarianService() {
+        super(new LibrarianManager());
+    }
+
     @Override
     public Librarian getById(String id) {
         return null;
